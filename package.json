@@ -1,0 +1,10 @@
+{
+  "name": "create-relectron-app",
+  "version": "1.0.0",
+  "description": "Electron + React app boilerplate",
+  "author": "Filipe Alves <filipe.alvesdefernando@hotmail.com>",
+  "license": "MIT",
+  "bin": {
+    "create-relectron-app": "./bootstrap.js"
+  },
+}

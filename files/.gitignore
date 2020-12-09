@@ -1,0 +1,4 @@
+node_modules
+dist/electron
+dist/react
+!dist/react/index.html
