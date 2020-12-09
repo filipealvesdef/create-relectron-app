@@ -3,6 +3,8 @@
 const path = require('path');
 const fs = require('fs');
 const cp = require('child_process');
+const yargs = require('yargs/yargs');
+const { hideBin } = require('yargs/helpers');
 
 const devDependencies = [
     '@babel/core',
@@ -70,3 +72,16 @@ const init = appName => {
         shell: true,
     });
 };
+
+const argv = yargs(hideBin(process.argv)).check((argv, options) => {
+    if (argv._.length > 1) {
+        throw new Error('You must pass only 1 name to your app');
+    } else if (!argv._.length) {
+        throw new Error('You must pass at least 1 name to your app');
+    } else {
+        return true;
+    }
+}).argv;
+
+const appName = argv._[0];
+init(appName);
