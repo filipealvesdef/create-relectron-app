@@ -1,9 +1,24 @@
 {
   "name": "create-relectron-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Electron + React app boilerplate",
   "author": "Filipe Alves <filipe.alvesdefernando@hotmail.com>",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "electron",
+    "boilerplate",
+    "reactron",
+    "relectron"
+  ],
+  "files": [
+    "files/*",
+    "bootstrap.js"
+  ],
+  "repository": {
+    "url": "https://github.com/filipealvesdef/create-relectron-app",
+    "type": "git"
+  },
   "bin": {
     "create-relectron-app": "./bootstrap.js"
   },
